@@ -83,7 +83,7 @@ http://ionicframework.com/docs/theming/ */
    */
 
   body {
-    --ion-color-primary: #428cff;
+    --ion-color-primary: #ff7b00;
     --ion-color-primary-rgb: 66,140,255;
     --ion-color-primary-contrast: #ffffff;
     --ion-color-primary-contrast-rgb: 255,255,255;
@@ -145,6 +145,8 @@ http://ionicframework.com/docs/theming/ */
     --ion-color-light-contrast-rgb: 255,255,255;
     --ion-color-light-shade: #1e2023;
     --ion-color-light-tint: #383a3e;
+    --ion-color-orange:orange;
+    --ion-color-white:white;
   }
 
   /*
@@ -153,7 +155,7 @@ http://ionicframework.com/docs/theming/ */
    */
 
   .ios body {
-    --ion-background-color: #000000;
+    --ion-background-color: #ffffff;
     --ion-background-color-rgb: 0,0,0;
 
     --ion-text-color: #ffffff;
@@ -197,7 +199,7 @@ http://ionicframework.com/docs/theming/ */
    */
 
   .md body {
-    --ion-background-color: #121212;
+    --ion-background-color: #ffffff;
     --ion-background-color-rgb: 18,18,18;
 
     --ion-text-color: #ffffff;
@@ -233,4 +235,76 @@ http://ionicframework.com/docs/theming/ */
 
     --ion-card-background: #1e1e1e;
   }
+
+  ion-tabs{
+    display: flex!important;
+    position: absolute!important;
+    inset: 0px!important;
+    width: 100%!important;
+    height: 100%!important;
+    contain: size layout style!important;
+    flex-direction: column-reverse!important;
+    justify-content: space-between!important;
+    flex-wrap: nowrap!important;
+  }
+ 
+  .ion-tab-button#tab-button-teaching{
+    display : inline-block!important;
+    height : 0!important;
+    width : 0!important;
+    border-right : 87px solid transparent!important;
+    border-bottom : 150px solid red!important;
+    border-left : 87px solid transparent!important;
+  }
+  .indic{
+    position: absolute;
+    top: -75%;
+    width: 70px;
+    height: 70px;
+   
+    border: 6px solid white;
+    background: var(--ion-color-primary);
+    
+    bottom: calc(-10px + var(--ion-safe-area-bottom));
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 30%;
+  }
+  ion-tab-button#tab-button-teaching {
+    transform: rotate(318deg);
+}
+  .indic::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+   
+
+  }
+  :host .ionicon {
+    stroke: currentcolor;
+    color: white;
+  }
+  :host(.tab-layout-label-hide) ::slotted(ion-icon), :host(.tab-has-icon-only) ::slotted(ion-icon) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 24px;
+    color: grey;
+}
+.bookIndic{
+  transform: rotate(42deg);
+}
+ion-tab-button#tab-button-shopping {
+  margin: 5%;
+}
+
+ion-tab-button#tab-button-donation {
+  margin: 5%;
+}
+
+
 }
