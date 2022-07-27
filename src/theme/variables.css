@@ -263,7 +263,7 @@ http://ionicframework.com/docs/theming/ */
     height: 70px;
    
     border: 6px solid white;
-    background: var(--ion-color-primary);
+    background: orange;
     
     bottom: calc(-10px + var(--ion-safe-area-bottom));
     left:0;
@@ -293,10 +293,11 @@ http://ionicframework.com/docs/theming/ */
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 24px;
-    color: grey;
+    color: white;
 }
 .bookIndic{
   transform: rotate(42deg);
+  color: orange;
 }
 ion-tab-button#tab-button-shopping {
   margin: 5%;
@@ -305,6 +306,43 @@ ion-tab-button#tab-button-shopping {
 ion-tab-button#tab-button-donation {
   margin: 5%;
 }
+#square{
+ 
+  width: 70px;
+  height: 70px;
+  background-color: orange;
+  transform: rotate(45deg);
+  border-radius: 30%;
+  position: fixed;
+  bottom: -28px;
+  right: auto;
+  left: auto;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  text-align: center;
+  border: 6px solid white;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center
+}
 
-
+.book{
+  color: grey;
+  position: absolute;
+}
+.flex{
+  display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
 }

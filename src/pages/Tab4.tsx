@@ -1,23 +1,23 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import './Tab2.css';
 
-const Tab2: React.FC = () => {
+const Tab4: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Shopping</IonTitle>
+          <IonTitle>Donation</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Shopping</IonTitle>
+            <IonTitle size="large">Donation</IonTitle>
           </IonToolbar>
+          hi
         </IonHeader>
       </IonContent>
     </IonPage>
   );
 };
 
-export default Tab2;
+export default Tab4;

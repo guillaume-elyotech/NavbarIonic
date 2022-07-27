@@ -1,4 +1,6 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonIcon, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { bookOutline } from 'ionicons/icons';
+import Square from '../components/Square/Square';
 import './Tab1.css';
 
 const Tab1: React.FC = () => {
@@ -6,15 +8,23 @@ const Tab1: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 1</IonTitle>
+          <IonTitle>Home</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Tab 1</IonTitle>
+            <IonTitle size="large">Home</IonTitle>
           </IonToolbar>
+          hi
         </IonHeader>
+<div className='flex'>
+<div id="square">
+    <IonIcon icon={bookOutline}  className="book"/>
+    </div>
+</div>
+   
+
       </IonContent>
     </IonPage>
   );

@@ -39,6 +39,8 @@ import {
   personOutline,
   heartOutline,
 } from "ionicons/icons";
+import Tab5 from './pages/Tab5';
+import Tab4 from './pages/Tab4';
 
 setupIonicReact();
 
@@ -48,7 +50,11 @@ const App: React.FC = () => (
     <IonTabs>
       <IonRouterOutlet>
         <Redirect exact path="/tabs" to="tabs/home" />
-
+        <Route exact path="/tabs/home" render={() => <Tab1 />} />
+        <Route exact path="/tabs/shopping" render={() => <Tab2 />}  />
+        <Route exact path="/tabs/teaching" render={() => <Tab3 />} />
+        <Route exact path="/tabs/donation" render={() => <Tab4 />}  />
+        <Route exact path="/tabs/userprofile" render={() => <Tab5 />} />
       </IonRouterOutlet>
 
       <IonTabBar slot="top" className="bar">
